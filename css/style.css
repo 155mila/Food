@@ -876,3 +876,9 @@ a {
     text-align: center;
   }
 }
+
+@media (max-width: 400px) {
+  .calculating-total .calculating-subtitle {
+    font-size: 14px;
+  }
+}
