@@ -126,18 +126,20 @@
             </div>
           </div>
           <div class="offer-slider-wrapper">
-            <div class="offer-slide">
-              <img src="img/slider/pepper.jpg" alt="pepper" />
+            <div class="offer-slider-inner">
+              <div class="offer-slide">
+                <img src="img/slider/pepper.jpg" alt="pepper" />
+              </div>
+              <div class="offer-slide">
+                <img src="img/slider/food-12.jpg" alt="food" />
+              </div>
+              <div class="offer-slide">
+                <img src="img/slider/olive-oil.jpg" alt="oil" />
+              </div>
+              <div class="offer-slide">
+                <img src="img/slider/paprika.jpg" alt="paprika" />
+              </div>
             </div>
-            <!-- <div class="offer-slide">
-                        <img src="img/slider/food-12.jpg" alt="food">
-                    </div>
-                    <div class="offer-slide">
-                        <img src="img/slider/olive-oil.jpg" alt="oil">
-                    </div>
-                    <div class="offer-slide">
-                        <img src="img/slider/paprika.jpg" alt="paprika">
-                    </div> -->
           </div>
         </div>
       </div>
@@ -149,10 +151,13 @@
         <div class="calculating-field">
           <div class="calculating-subtitle">Ваш пол</div>
           <div class="calculating-choose" id="gender">
-            <div class="calculating-choose-item calculating-choose-item-active">
+            <div
+              id="female"
+              class="calculating-choose-item calculating-choose-item-active"
+            >
               Женщина
             </div>
-            <div class="calculating-choose-item">Мужчина</div>
+            <div id="male" class="calculating-choose-item">Мужчина</div>
           </div>
           <div class="calculating-subtitle">Ваша конституция</div>
           <div class="calculating-choose calculating-choose-medium">
@@ -179,19 +184,20 @@
             Выберите вашу физическая активность
           </div>
           <div class="calculating-choose calculating-choose-big">
-            <div id="low" class="calculating-choose-item">
+            <div data-ratio="1.2" id="low" class="calculating-choose-item">
               Низкая активность
             </div>
             <div
+              data-ratio="1.375"
               id="small"
               class="calculating-choose-item calculating-choose-item-active"
             >
               Невысокая активность
             </div>
-            <div id="medium" class="calculating-choose-item">
+            <div data-ratio="1.55" id="medium" class="calculating-choose-item">
               Умеренная активность
             </div>
-            <div id="high" class="calculating-choose-item">
+            <div data-ratio="1.725" id="high" class="calculating-choose-item">
               Высокая активность
             </div>
           </div>
@@ -300,6 +306,6 @@
         </div>
       </div>
     </div>
-    <script src="js/script.js"></script>
+    <script src="js/bundle.js"></script>
   </body>
 </html>
