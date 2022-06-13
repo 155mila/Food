@@ -27,7 +27,7 @@ function forms(modalTimer, formSelector) {
          margin: 0 auto;
          `;
 
-      form.insertAdjacentElement('afterend', statusMessage);
+      /*form.insertAdjacentElement('afterend', statusMessage);
 
       const formData = new FormData(form);
 
@@ -44,7 +44,7 @@ function forms(modalTimer, formSelector) {
         })
         .finally(() => {
           form.reset();
-        });
+        });*/
     });
   }
 
@@ -70,9 +70,9 @@ function forms(modalTimer, formSelector) {
     }, 4000);
   }
 
-  fetch('http://localhost:3000/menu')
+  /*fetch('http://localhost:3000/menu')
     .then((data) => data.json())
-    .then((res) => console.log(res));
+    .then((res) => console.log(res));*/
 }
 
 export default forms;
