@@ -228,6 +228,11 @@ a {
   color: #fff;
   border: none;
 }
+
+.btn-dark:hover {
+  background-color: #54ed39;
+}
+
 .offer-advantages {
   width: 28%;
   margin-top: 50px;
