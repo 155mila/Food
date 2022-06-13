@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
     'tabheader-item-active'
   );
   modal('[data-modal]', '.modal', modalTimer);
-  timer('.timer', '2022-04-30');
+  timer('.timer', '2022-08-20');
   slider({
     container: '.offer-slider',
     slide: '.offer-slide',

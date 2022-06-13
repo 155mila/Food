@@ -632,16 +632,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 function timer(id, deadline) {
   //Timer
+  function setZero(num) {
+    if (num < 0) {
+      num = 0;
+    }
+    return num;
+  }
 
   function getTimerRemaining(endtime) {
-    const total = Date.parse(endtime) - Date.parse(new Date()),
-      days = Math.floor(total / (1000 * 60 * 60 * 24)),
-      hours = Math.floor((total / (1000 * 60 * 60)) % 24),
-      minutes = Math.floor((total / (1000 * 60)) % 60),
-      seconds = Math.floor((total / 1000) % 60);
+    const t = setZero(Date.parse(endtime) - Date.parse(new Date())),
+      days = Math.floor(t / (1000 * 60 * 60 * 24)),
+      hours = Math.floor((t / (1000 * 60 * 60)) % 24),
+      minutes = Math.floor((t / (1000 * 60)) % 60),
+      seconds = Math.floor((t / 1000) % 60);
 
     return {
-      total: total,
+      total: t,
       days: days,
       hours: hours,
       minutes: minutes,
@@ -816,7 +822,7 @@ window.addEventListener('DOMContentLoaded', () => {
     'tabheader-item-active'
   );
   (0,_modules_modal__WEBPACK_IMPORTED_MODULE_1__["default"])('[data-modal]', '.modal', modalTimer);
-  (0,_modules_timer__WEBPACK_IMPORTED_MODULE_2__["default"])('.timer', '2022-04-30');
+  (0,_modules_timer__WEBPACK_IMPORTED_MODULE_2__["default"])('.timer', '2022-08-20');
   (0,_modules_slider__WEBPACK_IMPORTED_MODULE_3__["default"])({
     container: '.offer-slider',
     slide: '.offer-slide',
